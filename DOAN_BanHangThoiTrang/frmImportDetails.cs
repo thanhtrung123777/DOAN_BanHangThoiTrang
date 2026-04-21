@@ -16,7 +16,7 @@ namespace DOAN_BanHangThoiTrang
         bool AddNew = false;
         public frmImportDetails()
         {
-            InitializeComponent();sssss
+            InitializeComponent();bbbbb
         }
 
         private void setContol(bool check)
