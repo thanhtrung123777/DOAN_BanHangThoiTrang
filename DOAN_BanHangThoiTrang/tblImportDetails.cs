@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace DOAN_BanHangThoiTrang
+{
+    [Table("ImportDetails")]
+    internal class tblImportDetails
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ImportDetailID { get; set; }
+
+        public int ImportID { get; set; }
+        public int ProductID { get; set; }
+        public int Quantity { get; set; }
+
+        [Column(TypeName = "decimal")]
+        public decimal Price { get; set; }
+
+        [Column(TypeName = "decimal")]
+        public decimal Total { get; set; }
+    }
+}
